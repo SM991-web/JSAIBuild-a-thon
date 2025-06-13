@@ -5,7 +5,7 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 const client = new ModelClient(
-    process.env.AZURE_INFERENCE_SDK_ENDPOINT ?? "https://sneha-mbudb6rm-swedencentral.services.ai.azure.com/models", new AzureKeyCredential(process.env.AZURE_INFERENCE_API_KEY ?? "4OHO8ZUlwTTdvwQYIVEhtW1vHBYkZU8nenkGVVXf6fqPnMInfLPhJQQJ99BFACfhMk5XJ3w3AAAAACOGklLk"));
+    process.env.AZURE_INFERENCE_SDK_ENDPOINT ?? "ENDPOINT", new AzureKeyCredential(process.env.AZURE_INFERENCE_API_KEY ?? "YOUR KEY HERE"));
 
 var messages = [
     { role: "developer", content: "You are an helpful assistant" },
